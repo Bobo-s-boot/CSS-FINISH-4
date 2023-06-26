@@ -1,10 +1,21 @@
 .task1 .item {
+  position: absolute;
+  top: 150px;
+  left: 200px;
 }
 
 .task2 .item {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 40%;
+  left: 45%;
 }
 
 .task3 .item {
+ /* position: fixed;
+ top: 95;
+ left: 36; */
 }
 
 .container4 {
@@ -12,90 +23,134 @@
 
 .task4 {
   width: 1000px;
+  position: relative;
 }
 .task4 .item {
+  position: absolute;
+  top: -1%;
+  right: 57%;
 }
 
 .task5 .item1 {
   background-color: red;
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  z-index: 1;
 }
 .task5 .item2 {
+  position: absolute;
+  top: 33px;
+  left: 33px;
 }
 .task5 .item3 {
   background-color: green;
+  position: relative;
+  top: -1px;
+  left: -2px;
+  z-index: 2;
 }
 
 .task6 .item {
+  display: block;
+  float: left;
 }
 
 .task7 .item {
+  display: block;
+  float: right;
 }
 
 .task8 .item1 {
+  overflow: hidden;
 }
 .task8 .item2 {
   height: 120px;
+  position: absolute;
+  right: -1px;
+  top: -10px;
 }
 
 .task8 p {
+ margin-top: 40px;
 }
 
 .task9 .item1 {
   height: 200px;
+  float: left;
 }
 .task9 .item2 {
+  overflow: hidden;
+  position: relative;
+  left: 570px;
 }
 .task9 p {
+  font-weight: 500;
 }
 
 .task10 .item1 {
+  float: right;
+  height: 200px;
 }
 .task10 .item2 {
+  overflow: hidden;
 }
 .task10 p {
+  font-weight: 500;
 }
 
 .task11 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
 .task12 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 .task13 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: fill;
 }
 
 .task14 .img-item {
   height: 100%;
   width: 100%;
+  object-fit: contain;
 }
 
 .task15 .img-item {
   height: 100%;
-  width: 100%;
+  width: 170%;
   object-fit: none;
 }
 
 .task16 .img-item {
-  height: 100%;
-  width: 100%;
-  object-fit: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 50%;
 }
 
 .task17 .img-item {
   height: 100%;
   width: 100%;
   object-fit: none;
+  position: absolute;
+  top: 100px;
 }
 
 .task18 .img-item {
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  left: 40px;
+  top: -70px;
+  max-width: 30%;
+  max-height: 100%;
   object-fit: none;
 }
 
@@ -106,13 +161,22 @@
 }
 
 .task20 {
-}
+
+user-select: none;}
 
 .task21 {
+  user-select: all;
 }
 
 .task22 {
+  cursor: pointer;
 }
 
+.task22:hover {
+  cursor: url("img/cursor-blue.png"), pointer;
+}
+
+
 html {
+  scroll-behavior: smooth;
 }
